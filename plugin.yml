@@ -1,0 +1,23 @@
+ name: Mineside
+ version: Indev v0.1
+ description: Mineside is a medieval version of planetside for minecraft servers.
+ author: Shockwave317
+ 
+ main: com.Shockwave317.mineside.Main
+ 
+ commands:
+        mineside:
+         description: /mineside
+ permissions:
+    mineside.*:
+        description: Gives access to all staff commands
+        children:
+            mineside.admin: true
+            mineside.player: true
+    mineside.admin:
+        description: Access to /staff <user> accept/decline
+        default: op
+    mineside.player:
+        description: Allows the user to apply for mod
+        default: op
+ 
